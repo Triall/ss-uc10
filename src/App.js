@@ -4,7 +4,7 @@ import validateString from "./validation";
 
 function App() {
     const [string, setString] = useState('');
-    const [maxLength, setMaxLength] = useState(1);
+    const [maxLength, setMaxLength] = useState();
 
     const isValid = useMemo(() => validateString(string, maxLength), [string, maxLength]);
 
