@@ -5,7 +5,7 @@ export default function validateString(string, maxLenght = Infinity) {
         return false;
     }
 
-    const regexp = new RegExp('(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~.])^\\S*$');
+    const regexp = new RegExp('(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~])^\\S*$');
 
     return regexp.test(string);
 }
